@@ -30,7 +30,6 @@ RUN apt-get update && \
     && rm -rf /var/lib/apt/lists/*
 
 # Initial settings
-RUN chown -R node /app/node_modules
 RUN mkdir /build_scripts
 ADD build.sh build_gzdoom.sh build_eternity-engine.sh /build_scripts/
 
