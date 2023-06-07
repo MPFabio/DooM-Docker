@@ -14,7 +14,7 @@ pipeline {
         stage ('Docker Tag') {
             steps {
                 script {
-                    sh 'docker tag fabio-tp-game fabiomp/fabio-tp-game'
+                    sh 'sudo docker tag fabio-tp-game fabiomp/fabio-tp-game'
                 }
             }
         }
@@ -22,7 +22,7 @@ pipeline {
         stage('Docker Login') {
             steps {
                 script {
-                    sh 'docker login -u fabiomp -p Aucunmdp69' 
+                    sh 'sudo docker login -u fabiomp -p Aucunmdp69' 
                 }    
             }
         }
@@ -30,7 +30,7 @@ pipeline {
         stage ('Docker Push') {
             steps {
                 script {
-                    sh 'docker push fabiomp/fabio-tp-game'        
+                    sh 'sudo docker push fabiomp/fabio-tp-game'        
                 }    
             }
         }    
