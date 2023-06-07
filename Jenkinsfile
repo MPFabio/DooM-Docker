@@ -15,7 +15,7 @@ pipeline {
             }
         }
 
-        stage ('Docker Build') {
+        stage ('Docker Tag') {
             steps {
                 script {
                     sh 'docker tag fabio-tp-game fabiomp/fabio-tp-game'
