@@ -3,7 +3,9 @@ FROM ubuntu
 ENV DEBIAN_FRONTEND noninteractive
 
 # Install required packages
-RUN cmake \
+RUN RUN apt-get update && \
+    apt-get install -y \
+      cmake \
       g++ \
       git \
       libbz2-dev \
