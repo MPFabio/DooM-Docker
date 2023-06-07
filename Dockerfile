@@ -3,7 +3,7 @@ FROM ubuntu
 ENV DEBIAN_FRONTEND noninteractive
 
 # Install required packages
-RUN RUN apt-get update && \
+RUN apt-get update && \
     apt-get install -y \
       cmake \
       g++ \
