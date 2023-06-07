@@ -1,10 +1,6 @@
 pipeline {
     agent any
 
- environment {     
-    DOCKERHUB_CREDENTIALS= credentials('dckr_pat_5KaQ1dyRihhhhdMp2LqeLSHhNT0')     
-   } 
-
     stages {
         stage ('Docker Build') {
             steps {
